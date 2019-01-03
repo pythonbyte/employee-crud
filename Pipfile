@@ -11,6 +11,8 @@ markdown = "*"
 "flake8" = "*"
 requests = "*"
 ipdb = "*"
+gunicorn = "*"
+django-heroku = "*"
 
 [dev-packages]
 
