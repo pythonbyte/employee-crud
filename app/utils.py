@@ -29,7 +29,7 @@ class Cache():
 cache = Cache()
 def get_address(obj):
     # base url to retrieve the address after sending the zipcode
-    cep_url = 'http://127.0.0.1:8080/getzipcode/{}'
+    cep_url = 'https://zipcodeapionyo.herokuapp.com/getzipcode/{}'
 
     # getting the zipcode from the object
     cep = obj['cep']
