@@ -20,7 +20,7 @@ from app.views import api_root, EmployeeListCreate, EmployeeDetail
 
 urlpatterns = [
     path('', api_root),
-    path('employees/', EmployeeListCreate.as_view(), name='employee-list'),
+    path('employees', EmployeeListCreate.as_view(), name='employee-list'),
     path(
         'employees/<int:pk>', EmployeeDetail.as_view(), name='employee-detail'
     ),
