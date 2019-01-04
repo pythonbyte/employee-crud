@@ -33,7 +33,7 @@ To test the application use:
 This API works with 2 simple endpoints:
 
 ## Employees Endpoint
-This endpoint works at the **/employees/**, and lists the employees created and create new employees.
+This endpoint works at the **/employees**, and lists the employees created and create new employees.
 
 GET data:
 Status: 200 OK
