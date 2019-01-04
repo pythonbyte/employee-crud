@@ -19,14 +19,15 @@ class Cache():
             # if the cache has more than 20 zipcodes delete the oldest one
             del self.cache_list[0]
         self._cache_list.append(value)
-    #
+
     @cache_list.deleter
     def cache_list(self):
         del self.cache_list
 
 
-
 cache = Cache()
+
+
 def get_address(obj):
     # base url to retrieve the address after sending the zipcode
     cep_url = 'https://zipcodeapionyo.herokuapp.com/getzipcode/{}'
@@ -75,4 +76,3 @@ def get_address(obj):
 
     except Exception as e:
         raise ValidationError({'error': e})
-

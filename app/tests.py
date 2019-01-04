@@ -40,7 +40,6 @@ class TestGetCreateEmployee(APITestCase):
             "state": "MG"
         }
 
-
     def test_get_employee_list(self):
         url = reverse('employee-list')
         response = self.client.get(url)
@@ -68,14 +67,12 @@ class TestGetCreateEmployee(APITestCase):
             response.status_code, status.HTTP_405_METHOD_NOT_ALLOWED
         )
 
-
     def test_get_employee_detail(self):
         url = reverse('employee-list')
         response = self.client.post(url, data=self.valid_employee_data)
         url = reverse('employee-detail', kwargs={'pk': response.json()['id']})
         response = self.client.get(url)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
-
 
     def test_delete_employee(self):
         url = reverse('employee-list')
