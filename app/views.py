@@ -66,13 +66,13 @@ class EmployeeDetail(generics.RetrieveUpdateDestroyAPIView):
     def delete(self, request, pk):
         # getting one employee object using the primary key
         employee = get_object_or_404(Employee, pk=pk)
-
+        employee_name = employee.name
         # trying to delete the employee model object
         try:
             employee.delete()
             return Response(
                 {
-                    'message': 'User {} was deleted.'.format(employee.name)
+                    'message': 'User {} was deleted.'.format(employee_name)
                 },
                 status=status.HTTP_204_NO_CONTENT
             )
