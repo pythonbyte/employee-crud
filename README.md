@@ -1,8 +1,8 @@
-# Challenge
-
 # Description
 
-This project is a CRUD for employees.
+This project is a CRUD for employees, and uses the zipcode api to search for zipcodes.
+
+https://github.com/pythonbyte/zipcode-api
 
 
 # Installing
