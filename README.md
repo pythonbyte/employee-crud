@@ -1,10 +1,10 @@
-# Onyo Challenge
+# Challenge
 
 # Description
 
-This project is a challenge for a job opening at Onyo. It's a CRUD for employees
+This project is a CRUD for employees.
 
-Deployed app at Heroku: https://employeecrud.herokuapp.com/
+
 # Installing
 
 First step of installation is having Pipenv installed in your machine, if you doesn't have just use the command below:
